@@ -1,0 +1,503 @@
+/*--------------------------------------------*/
+/*----------        Default        -----------*/
+/*--------------------------------------------*/
+:root {
+    --primary: #e67e22;
+    --secondary: #c76b1b;
+    --s_bg: rgb(230, 228, 228);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+/*--------------------------------------------*/
+/*----------        Header        -----------*/
+/*--------------------------------------------*/
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+     url("../img/hero.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    margin: 1% 8%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+nav img {
+    grid-area: "logo";
+    height: 100px;
+    margin: 10px;
+}
+
+nav ul {
+    padding-left: 30%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    place-items: center;
+}
+
+nav a {
+    font-size: 90%;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+}
+
+nav li::after {
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.hero {
+    top: 35%;
+    left: 10%;
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.btn {
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-size: 90%;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.btn-full:link,
+.btn-full:visited
+ {
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: all 0.2s;
+}
+
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    transition: all 0.2s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+/*--------------------------------------------*/
+/*----------        Headings       -----------*/
+/*--------------------------------------------*/
+
+h1 {
+    grid-area: "h1";
+    font-size: 220%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+h2 {
+    font-size: 160%;
+    margin-top: 60px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    height: 5px;
+    content: " ";
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 40%;
+}
+
+h3 {
+    margin: 1% 20%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 90%;
+}
+
+
+
+/*--------------------------------------------*/
+/*----------        Features       -----------*/
+/*--------------------------------------------*/
+
+.section-feature {
+    display: grid;
+}
+
+.features {
+    margin: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+.feature i {
+    font-size: 50px;
+    color: var(--primary);
+}
+
+.feature h3 {
+    text-align: start;
+    margin: 0;
+}
+
+.feature p {
+    font-size: 80%;
+}
+
+/*--------------------------------------------*/
+/*----------        Gallery        -----------*/
+/*--------------------------------------------*/
+
+.section-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    overflow: hidden;
+    background-color: black;
+}
+
+.section-gallery img {
+    width: 100%;
+    margin: 0;
+    opacity: 0.7;
+    transform: scale(1.5);
+    transition: all 0.5s;
+}
+
+.section-gallery img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/*--------------------------------------------*/
+/*----------        Works          -----------*/
+/*--------------------------------------------*/
+
+.section-works {
+    background-color: var(--s_bg);
+    padding-bottom: 60px;
+}
+
+.works {
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.works img {
+    height: 400px;
+    width: auto;
+}
+
+.steps {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.step div {
+    margin-top: 15px;
+}
+
+.no{
+    font-size: 120%;
+    margin: 0;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    padding: 10px 18px;
+}
+
+.step p {
+    margin: 0;
+}
+
+.step-btn img{
+    height: 50px;
+    width: auto;
+}
+
+.step-btn {
+    margin-right: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*--------------------------------------------*/
+/*----------        Cities         -----------*/
+/*--------------------------------------------*/
+
+.cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 5% 8%;
+}
+
+.city {
+    display: grid;
+    grid-row-gap: 15px;
+}
+
+.city img {
+    height: 180px;
+    width: auto;
+}
+
+.city h3 {
+    font-size: 110%;
+    text-align: start;
+    margin: 0;
+}
+
+.city i {
+    color: var(--primary);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.city a{
+    color: var(--primary);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--primary);
+}
+
+/*--------------------------------------------*/
+/*----------     Testimonials      -----------*/
+/*--------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/back-customers.jpg");
+    background-attachment: fixed;
+    padding-bottom: 60px;
+}
+
+.section-testimonials h2 {
+    color: white;
+}
+
+.testimonials {
+    color: white;
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.user {
+    text-align: start;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.user img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+/*----------        Pricing        -----------*/
+/*--------------------------------------------*/
+
+.section-pricing {
+    background-color: rgb(238, 235, 235);
+    padding-bottom: 60px;
+}
+
+.price-table {
+    margin: 0 12%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.price {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.price div {
+    font-size: 90%;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgb(192, 190, 190);
+}
+
+.price ul {
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+}
+
+.price i {
+    margin-right: 30px;
+    font-size: 140%;
+    color: var(--primary);
+}
+
+.price h3 {
+    text-align: start;
+    margin: 0;
+    font-weight: 500;
+}
+
+.price div:last-child{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.main-price {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 250;
+    color: var(--primary);
+    font-size: 400%;
+}
+
+.main-price span {
+    font-weight: 300;
+    font-size: 20%;
+}
+
+/*--------------------------------------------*/
+/*----------         Form          -----------*/
+/*--------------------------------------------*/
+
+.section-form {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+form {
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+}
+
+label {
+    padding-left: 100px;
+}
+
+input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.section-form a {
+    margin: 0 auto;
+}
+
+/*--------------------------------------------*/
+/*----------        Footer         -----------*/
+/*--------------------------------------------*/
+
+footer {
+    padding: 30px 0;
+    background-color: rgb(58, 57, 57);
+}
+
+footer h3 {
+    color: rgb(119, 119, 119);
+}
+
+footer div {
+    widows: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.site,
+.social {
+    list-style: none;
+    font-size: 80%;
+    color: rgb(119, 119, 119);   
+}
+
+.site li,
+.social li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.site a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);   
+}
