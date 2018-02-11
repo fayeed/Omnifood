@@ -1,6 +1,9 @@
 /*--------------------------------------------*/
+
 /*----------        Default        -----------*/
+
 /*--------------------------------------------*/
+
 :root {
     --primary: #e67e22;
     --secondary: #c76b1b;
@@ -8,10 +11,14 @@
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -25,15 +32,16 @@ body {
     grid-template-columns: 1fr;
 }
 
-
-
 /*--------------------------------------------*/
+
 /*----------        Header        -----------*/
+
 /*--------------------------------------------*/
+
 header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-     url("../img/hero.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero.jpg");
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -93,21 +101,20 @@ nav li::after {
 }
 
 .btn-full:link,
-.btn-full:visited
- {
+.btn-full:visited {
     color: white;
     background-color: var(--primary);
     border: 1px solid var(--primary);
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
-
-
 
 .btn-ghost:link,
 .btn-ghost:visited {
     color: var(--primary);
     background-color: transparent;
     border: 1px solid var(--primary);
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -126,7 +133,9 @@ nav li::after {
 }
 
 /*--------------------------------------------*/
+
 /*----------        Headings       -----------*/
+
 /*--------------------------------------------*/
 
 h1 {
@@ -164,10 +173,10 @@ h3 {
     font-size: 90%;
 }
 
-
-
 /*--------------------------------------------*/
+
 /*----------        Features       -----------*/
+
 /*--------------------------------------------*/
 
 .section-feature {
@@ -180,7 +189,6 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
-
 
 .feature i {
     font-size: 50px;
@@ -197,7 +205,9 @@ h3 {
 }
 
 /*--------------------------------------------*/
+
 /*----------        Gallery        -----------*/
+
 /*--------------------------------------------*/
 
 .section-gallery {
@@ -217,17 +227,22 @@ figure {
     width: 100%;
     margin: 0;
     opacity: 0.7;
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .section-gallery img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.08);
     transform: scale(1.08);
 }
 
 /*--------------------------------------------*/
+
 /*----------        Works          -----------*/
+
 /*--------------------------------------------*/
 
 .section-works {
@@ -261,7 +276,7 @@ figure {
     margin-top: 15px;
 }
 
-.no{
+.no {
     font-size: 120%;
     margin: 0;
     color: var(--primary);
@@ -274,7 +289,7 @@ figure {
     margin: 0;
 }
 
-.step-btn img{
+.step-btn img {
     height: 50px;
     width: auto;
 }
@@ -286,7 +301,9 @@ figure {
 }
 
 /*--------------------------------------------*/
+
 /*----------        Cities         -----------*/
+
 /*--------------------------------------------*/
 
 .cities {
@@ -318,7 +335,7 @@ figure {
     margin-right: 10px;
 }
 
-.city a{
+.city a {
     color: var(--primary);
     text-decoration: none;
     padding-bottom: 5px;
@@ -326,10 +343,13 @@ figure {
 }
 
 /*--------------------------------------------*/
+
 /*----------     Testimonials      -----------*/
+
 /*--------------------------------------------*/
 
 .section-testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/back-customers.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/back-customers.jpg");
     background-attachment: fixed;
     padding-bottom: 60px;
@@ -360,7 +380,9 @@ figure {
 }
 
 /*--------------------------------------------*/
+
 /*----------        Pricing        -----------*/
+
 /*--------------------------------------------*/
 
 .section-pricing {
@@ -404,7 +426,7 @@ figure {
     font-weight: 500;
 }
 
-.price div:last-child{
+.price div:last-child {
     text-align: center;
     padding: 30px 0;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -424,7 +446,9 @@ figure {
 }
 
 /*--------------------------------------------*/
+
 /*----------         Form          -----------*/
+
 /*--------------------------------------------*/
 
 .section-form {
@@ -465,7 +489,9 @@ textarea {
 }
 
 /*--------------------------------------------*/
+
 /*----------        Footer         -----------*/
+
 /*--------------------------------------------*/
 
 footer {
@@ -488,16 +514,16 @@ footer div {
 .social {
     list-style: none;
     font-size: 80%;
-    color: rgb(119, 119, 119);   
+    color: rgb(119, 119, 119);
 }
 
 .site li,
-.social li{
+.social li {
     display: inline;
     margin: 0 10px;
 }
 
 .site a {
     text-decoration: none;
-    color: rgb(119, 119, 119);   
+    color: rgb(119, 119, 119);
 }
