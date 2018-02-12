@@ -527,3 +527,265 @@ footer div {
     text-decoration: none;
     color: rgb(119, 119, 119);
 }
+
+/*--------------------------------------------*/
+
+/*----------        Queries        -----------*/
+
+/*--------------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    /*---------- Default ----------*/
+    body {
+        font-size: 15px;
+    }
+    /*------------ Header -------------*/
+    /*------------ Features -------------*/
+    /*------------ Gallery -------------*/
+    /*------------ Works --------------*/
+    .section-works {
+        background-color: var(--s_bg);
+        padding-bottom: 60px;
+    }
+    .section-works h2 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    .works {
+        width: 90%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .works img {
+        height: 300px;
+        width: auto;
+    }
+    .steps {
+        display: grid;
+        grid-row-gap: 10px;
+    }
+    .step {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+    .step div {
+        margin-top: 8px;
+    }
+    .no {
+        font-size: 120%;
+        margin: 0;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 50%;
+        padding: 8px 14px;
+    }
+    .step p {
+        margin: 0;
+    }
+    .step-btn img {
+        height: 40px;
+        width: auto;
+    }
+    .step-btn {
+        margin-right: 30%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*------------ Cities -------------*/
+    .cities {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 5% 8%;
+        grid-row-gap: 30px;
+    }
+    /*------------ Testimonials -------------*/
+    .section-testimonials h2 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    /*------------ Pricing -------------*/
+    .section-pricing h2 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    .price-table {
+        margin: 0 3%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .price i {
+        margin-right: 10px;
+        font-size: 140%;
+        color: var(--primary);
+    }
+    /*------------ Form -------------*/
+    form {
+        margin: 0 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+    /*------------ Footer -------------*/
+}
+
+@media only screen and (max-width: 420px) {
+    /*------------ Default ----------*/
+    body {
+        font-size: 15px;
+    }
+    h2 {
+        margin: 0 5%;
+        font-size: 160%;
+        margin-top: 60px;
+        font-weight: 300;
+        text-align: center;
+    }
+    h2::after {
+        display: block;
+        height: 5px;
+        content: " ";
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--primary);
+        width: 20%;
+        margin-top: -10px;
+        margin-left: 40%;
+    }
+    /*------------ Header -------------*/
+    .hero {
+        top: 35%;
+        left: 10%;
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+    }
+    /*------------ Features -------------*/
+    .section-feature h2 {
+        margin-top: 30px;
+    }
+    .features {
+        margin: 5% 10%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    /*------------ Gallery -------------*/
+    .section-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*------------ Works --------------*/
+    .section-works h2 {
+        margin-top: 0;
+        margin: 0 5%;
+        padding-top: 30px;
+        margin-bottom: 20px;
+    }
+    .works>img {
+        display: none;
+    }
+    .section-works {
+        background-color: var(--s_bg);
+        padding-bottom: 30px;
+    }
+    .works {
+        width: 90%;
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: 50px 2fr;
+    }
+    .step-btn img {
+        width: 50px;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .step {
+        display: grid;
+        grid-row-gap: 10px;
+    }
+    .step {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+    }
+    .step div {
+        margin-top: 8px;
+    }
+    .no {
+        font-size: 120%;
+        margin: 0;
+        color: var(--primary);
+        border: 1px solid var(--primary);
+        border-radius: 50%;
+        padding: 8px 14px;
+    }
+    .step p {
+        margin: 0;
+    }
+    .step-btn img {
+        height: 40px;
+        width: auto;
+    }
+    .step-btn {
+        margin-right: 30%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*------------ Cities -------------*/
+    .cities {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 5% 8%;
+        grid-row-gap: 30px;
+        place-items: center;
+    }
+    /*------------ Testimonials -------------*/
+    .section-testimonials h2 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+    .testimonials {
+        color: white;
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    .user {
+        display: none;
+    }
+    /*------------ Pricing -------------*/
+    .section-pricing h2 {
+        margin-top: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .price-table {
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    .price i {
+        margin-right: 10px;
+        font-size: 240%;
+        color: var(--primary);
+    }
+    /*------------ Form -------------*/
+    .section-form h2 {
+        padding-bottom: 30px;
+    }
+    form {
+        margin: 0 0%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-row-gap: 20px;
+    }
+    form label {
+        padding-left: 15%;
+    }
+    /*------------ Footer -------------*/
+}
