@@ -55,19 +55,23 @@ nav {
 
 nav img {
     grid-area: "logo";
-    height: 100px;
+    height: 80px;
     margin: 10px;
 }
 
 nav ul {
     padding-left: 30%;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
     place-items: center;
 }
 
+nav li {
+    float: left;
+}
+
 nav a {
+    margin-right: 30px;
     font-size: 90%;
     text-decoration: none;
     color: white;
@@ -519,7 +523,7 @@ footer div {
 
 .site li,
 .social li {
-    display: inline;
+    float: left;
     margin: 0 10px;
 }
 
@@ -636,6 +640,21 @@ footer div {
     body {
         font-size: 15px;
     }
+
+    nav img {
+        height: 70px;
+        width: auto;
+    }
+
+    .btn {
+        border-radius: 100px;
+        padding: 8px 20px;
+        font-size: 80%;
+        text-decoration: none;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
     h2 {
         margin: 0 5%;
         font-size: 160%;
@@ -643,6 +662,7 @@ footer div {
         font-weight: 300;
         text-align: center;
     }
+
     h2::after {
         display: block;
         height: 5px;
